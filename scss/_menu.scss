@@ -80,7 +80,7 @@
       background-image: url("../images/img.png");
       background-position: center;
 
-      background-size: 100%;
+      background-size: contain;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
