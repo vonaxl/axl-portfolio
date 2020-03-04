@@ -79,6 +79,9 @@
 }
 // Smartphones
 @include mediaSm {
+  main h1 {
+    padding-top: 10vh;
+  }
   #contact {
     .boxes {
       div {
