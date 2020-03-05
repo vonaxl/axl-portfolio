@@ -27,3 +27,68 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+var colors = {
+  primaryColor: "black",
+  secondaryColor: "#25b0e7"
+};
+
+// chart js
+var ctx = document.getElementById("myChart").getContext("2d");
+var chart = new Chart(ctx, {
+  // The type of chart we want to create
+  type: "horizontalBar",
+
+  // The data for our dataset
+  data: {
+    labels: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "JQuery",
+      "MySQL",
+      "Php",
+      "Laravel",
+      "VueJs"
+    ],
+    datasets: [
+      {
+        label: "Conoscenza",
+        backgroundColor: colors.secondaryColor,
+        borderColor: "white",
+        borderWidth: 1,
+        data: [85, 83, 75, 77, 73, 70, 72, 65]
+      }
+    ]
+  },
+
+  // Configuration options go here
+  options: {
+    legend: {
+      display: false,
+      labels: {
+        // This more specific font property overrides the global property
+
+        fontColor: "white"
+      }
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            // beginAtZero: true,
+            fontColor: "white"
+          }
+        }
+      ],
+      xAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+            fontColor: "white"
+          }
+        }
+      ]
+    }
+  }
+});

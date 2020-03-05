@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- fontawesome -->
     <link
       rel="stylesheet"
       href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css "
+      defer
     />
     <!-- font family google -->
     <link
@@ -57,24 +60,24 @@
     <main id="about">
       <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
       <h2 class="sm-heading">
-        Let me tell you a few things
+        Chi sono?
       </h2>
       <div class="about-info">
         <img src="images/img.png" alt="Axl Fernandez" class="bio-image" />
         <div class="bio">
-          <h3 class="text-secondary">BIO</h3>
+          <h3 class="text-secondary">Axl Fernandez</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eos
-            eum impedit vel harum dolor sapiente illum beatae veniam tempora,
-            quasi voluptas odio consequuntur dignissimos. Sequi accusantium eos
-            laborum et. Iure aspernatur cumque dignissimos libero aliquam ullam
-            vero ex voluptate, accusantium quo eligendi consequatur pariatur
-            mollitia beatae quod laudantium error odit illo, eos itaque id quis.
-            Numquam sunt id blanditiis! Distinctio quasi, magnam perspiciatis
-            deserunt sint cum nisi quia quidem fugit laudantium maxime
-            aspernatur voluptate ut hic magni? Labore tenetur odit dolorum
-            eligendi, mollitia iste consequuntur commodi ipsum delectus! Minima?
+            Sono un Full Stack Web Developer
           </p>
+          <p>
+            Appassionato di informatica e tecnologia. Amo conoscere persone
+            nuove, adoro le sfide e sopratutto sono sempre pronto ad imparare
+            nuovi modi per risolvere problemi e bug nella programmazione.
+          </p>
+        </div>
+        <div class="skills">
+          <h3 class="text-secondary">Competenze</h3>
+          <canvas id="myChart" style="width: 100%; height: 100%;"></canvas>
         </div>
         <div class="job job-1">
           <h3>Boolean Career</h3>
