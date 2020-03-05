@@ -116,6 +116,7 @@ main {
   }
   .overflow {
     max-height: 18vh;
+    min-height: 5vh;
     overflow-y: auto;
     padding: 0.7rem 1.3rem;
   }
@@ -123,11 +124,12 @@ main {
 // project page
 .projects {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   img {
     width: 100%;
+    height: 20vh;
     border: 3px #fff solid;
     &:hover {
       opacity: 0.5;
@@ -135,8 +137,19 @@ main {
       @include easeOut;
     }
   }
+  .overflow {
+    max-height: 6vh;
+    min-height: 3vh;
+    overflow-y: auto;
+    padding: 0.7rem 1.3rem;
+  }
 }
 // contact page
+#contact {
+  background-image: url("https://media2.giphy.com/media/3og0IAzB7lmOo2q0Ss/source.gif");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -179,7 +192,7 @@ main {
 }
 .btn-light {
   @extend .btn;
-  background: lighten($color: $primary-color, $amount: 50);
+  background: lighten($color: $primary-color, $amount: 20);
   color: #fff;
 }
 

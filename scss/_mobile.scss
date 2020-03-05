@@ -6,13 +6,19 @@
   .projects {
     grid-template-columns: repeat(5, 1fr);
   }
-  // about page
-  // .about-info {
-  //   // grid-template-columns: repeat(2, 1fr);
-  // }
+  #project {
+    .sm-heading {
+      width: 50%;
+    }
+  }
 }
 // Desktop & Laptop
 @include mediaLg {
+  #project {
+    .sm-heading {
+      width: 70%;
+    }
+  }
   .bio-image {
     width: 300px !important;
   }
@@ -27,7 +33,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-// Tables
+// Tablets
 @include mediaMd {
   #contact {
     .boxes {
@@ -131,5 +137,10 @@
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  #project {
+    .btn-light {
+      display: none;
+    }
   }
 }
