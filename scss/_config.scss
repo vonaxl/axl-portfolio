@@ -3,7 +3,26 @@ $secondary-color: #25b0e7;
 $show-home-image: true;
 $home-image: url("https://cutewallpaper.org/21/1920-x-1080-gif/wg-WallpapersGeneral-Thread-7178018.gif");
 $background-opacity: 0.8;
+// scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba($primary-color, 0.9);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 // mixins
 @mixin easeOut {
   transition: all 0.5s ease-out;

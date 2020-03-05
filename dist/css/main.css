@@ -1,3 +1,19 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.9); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -183,8 +199,14 @@ main {
     grid-area: job3; }
   .about-info .job {
     background-color: #0d0d0d;
-    padding: 0.5rem;
-    border-bottom: #25b0e7 5px solid; }
+    padding: 1rem;
+    border-bottom: #25b0e7 5px solid;
+    width: 95%;
+    height: 95%; }
+  .about-info .overflow {
+    max-height: 18vh;
+    overflow-y: auto;
+    padding: 0.7rem 1.3rem; }
 
 .projects {
   display: grid;

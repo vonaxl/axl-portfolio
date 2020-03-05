@@ -108,8 +108,16 @@ main {
 
   .job {
     background-color: lighten($primary-color, 5);
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: $secondary-color 5px solid;
+    // line-height: 1.2rem;
+    width: 95%;
+    height: 95%;
+  }
+  .overflow {
+    max-height: 18vh;
+    overflow-y: auto;
+    padding: 0.7rem 1.3rem;
   }
 }
 // project page
