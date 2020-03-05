@@ -191,6 +191,9 @@ main {
     font-size: 1.1rem; }
   .about-info .skills {
     grid-area: skills; }
+    .about-info .skills #myChart {
+      width: 100% !important;
+      height: 100% !important; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
