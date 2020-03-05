@@ -95,6 +95,10 @@ main {
   }
   .skills {
     grid-area: skills;
+    #myChart {
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
   .job-1 {
     grid-area: job1;
