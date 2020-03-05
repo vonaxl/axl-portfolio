@@ -27,8 +27,11 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-import styles from "../../scss/main.scss";
-console.log(styles.primaryColor);
+
+var colors = {
+  primaryColor: "black",
+  secondaryColor: "#25b0e7"
+};
 
 // chart js
 var ctx = document.getElementById("myChart").getContext("2d");
@@ -38,13 +41,23 @@ var chart = new Chart(ctx, {
 
   // The data for our dataset
   data: {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "JQuery",
+      "MySQL",
+      "Php",
+      "Laravel",
+      "VueJs"
+    ],
     datasets: [
       {
-        label: "My First dataset",
-        backgroundColor: variables.primaryColor,
-        borderColor: "rgb(255, 99, 132)",
-        data: [0, 10, 5, 2, 20, 30, 45]
+        label: "Conoscenza",
+        backgroundColor: colors.secondaryColor,
+        borderColor: "white",
+        borderWidth: 1,
+        data: [85, 83, 75, 77, 73, 70, 72, 65]
       }
     ]
   },
@@ -52,10 +65,30 @@ var chart = new Chart(ctx, {
   // Configuration options go here
   options: {
     legend: {
+      display: false,
       labels: {
         // This more specific font property overrides the global property
+
         fontColor: "white"
       }
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            // beginAtZero: true,
+            fontColor: "white"
+          }
+        }
+      ],
+      xAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+            fontColor: "white"
+          }
+        }
+      ]
     }
   }
 });

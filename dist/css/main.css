@@ -159,6 +159,8 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  justify-items: center;
+  align-items: center;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "bioimage bio skills" "job1 job2 job3";
@@ -251,7 +253,10 @@ main {
   .bio-image {
     width: 300px !important; }
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .about-info {
+    grid-template-areas: "bioimage bio" "skills job1" "job2 job3";
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   #contact .boxes div {
@@ -286,14 +291,18 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "skills" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main h1 {
-    padding-top: 10vh; }
+  main {
+    padding: 0 2rem; }
+    main h1 {
+      padding-top: 10vh; }
+    main#about #myChart {
+      width: 100%; }
   #contact .boxes div {
     width: 100%;
     font-size: 1rem; }

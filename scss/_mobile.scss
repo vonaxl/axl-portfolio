@@ -6,6 +6,10 @@
   .projects {
     grid-template-columns: repeat(5, 1fr);
   }
+  // about page
+  // .about-info {
+  //   // grid-template-columns: repeat(2, 1fr);
+  // }
 }
 // Desktop & Laptop
 @include mediaLg {
@@ -14,6 +18,13 @@
   }
   .projects {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage bio"
+      "skills job1"
+      "job2 job3";
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 // Tables
@@ -26,6 +37,7 @@
       }
     }
   }
+
   .bio-image {
     width: 300px !important;
   }
@@ -68,6 +80,7 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "skills"
       "job1"
       "job2"
       "job3";
@@ -79,9 +92,19 @@
 }
 // Smartphones
 @include mediaSm {
-  main h1 {
-    padding-top: 10vh;
+  main {
+    padding: 0 2rem;
+    h1 {
+      padding-top: 10vh;
+    }
+    &#about {
+      #myChart {
+        width: 100%;
+        // min-height: 20vh;
+      }
+    }
   }
+
   #contact {
     .boxes {
       div {
