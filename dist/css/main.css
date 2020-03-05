@@ -234,7 +234,8 @@ main {
 #contact {
   background-image: url("https://media2.giphy.com/media/3og0IAzB7lmOo2q0Ss/source.gif");
   background-repeat: no-repeat;
-  background-position: bottom right; }
+  background-position: bottom right;
+  background-size: 20%; }
 
 .boxes {
   display: flex;
